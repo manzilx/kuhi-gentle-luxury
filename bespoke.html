@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KUHI ATELIER | Bespoke Couture</title>
+    <meta name="description" content="Step into a realm where traditional Assamese Muga and Paat silk meet the precision of master tailoring." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#FCF9F8",
+                        "on-surface": "#1b1c1c",
+                        "primary": "#000000",
+                        "on-primary": "#FFFFFF",
+                        "secondary": "#775A19",
+                        "surface-variant": "#E4E2E1",
+                        "on-surface-variant": "#444748",
+                        "outline": "#747878",
+                        "outline-variant": "#C4C7C7",
+                        "background": "#1b1c1c",
+                        "on-background": "#ffffff",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-container": "#f0eded",
+                        "primary-container": "#1c1b1b"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px", lg: "0px", xl: "0px", full: "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Newsreader", "serif"],
+                        body: ["Manrope", "sans-serif"],
+                        label: ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::selection { background: #775A19; color: white; }
+    </style>
+</head>
+<body class="bg-[#1b1c1c] text-white antialiased" data-theme="dark">
+
+<!-- Top Navigation Bar (Dark Variant) -->
+<nav class="fixed top-0 z-50 w-full transition-all duration-500 bg-[#1b1c1c]/80 backdrop-blur-xl">
+    <div class="flex justify-between items-center w-full px-6 md:px-12 py-4 md:py-6 max-w-none">
+        <div class="flex items-center space-x-8 md:space-x-12">
+            <a href="index.html">
+                <img src="assets/kuhi-logo-white.png" alt="KUHI" class="h-20 md:h-24 w-auto object-contain" />
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a class="text-white/60 pb-1 hover:text-white transition-all duration-300 font-label text-[10px] tracking-[0.2rem] uppercase font-medium" href="index.html">Home</a>
+                <a class="text-white/60 pb-1 hover:text-white transition-all duration-300 font-label text-[10px] tracking-[0.2rem] uppercase font-medium" href="collections.html">Collections</a>
+                <a class="text-white border-b border-white pb-1 transition-all duration-300 font-label text-[10px] tracking-[0.2rem] uppercase font-medium" href="bespoke.html">Bespoke</a>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4 md:space-x-6">
+            <button class="material-symbols-outlined text-white hover:text-secondary transition-colors">shopping_bag</button>
+            <button class="material-symbols-outlined text-white hover:text-secondary transition-colors">person</button>
+            <button class="md:hidden text-white hover:opacity-60 transition-opacity" data-mobile-menu-toggle>
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu (Dark) -->
+<div class="mobile-menu dark">
+    <button class="absolute top-8 right-8 text-white" data-mobile-menu-close>
+        <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="collections.html">Collections</a>
+    <a href="bespoke.html">Bespoke</a>
+</div>
+
+<main>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-24 bg-[#1c1b1b]">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-cover bg-center opacity-40 grayscale" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrTIb73Znsn--8w0cow0XZt4xtZdySnTFsu7LM4bCPlPBLPp9GqJlccpCfKRNoOYiH9kWpgaprXZeEaJUcVOnPDZmL9r8zYY_9zXqtBfOkUBJdbE27FAsqldX7aIteN-vellIHn6GqrTrjtabZlaS5GWB1m0CavjvpPG2F9k4hJJ65BYKAM8VItuRGMK7WXJsYJMLY_aBpHuZ-9GMeU471QXJrTavya0hEh5WYTj-UhXVzQBa0h9ngGSdg_kOBAssLcTdOzYRByvgh')"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#1b1c1c] via-transparent to-transparent"></div>
+        </div>
+        <div class="relative z-10 w-full px-6 md:px-24">
+            <div class="max-w-5xl">
+                <span class="block font-label text-[10px] tracking-[0.4rem] uppercase text-secondary mb-6 md:mb-8 hero-animate">L'Atelier Priv&eacute;</span>
+                <h1 class="font-serif text-huge text-white leading-[0.9] mb-8 md:mb-12 tracking-tighter hero-animate-delay-1">
+                    Bespoke Couture<br />
+                    <span class="italic font-extralight opacity-80">Your Legacy, Woven.</span>
+                </h1>
+                <p class="font-body text-white/50 text-base md:text-lg max-w-xl mb-8 md:mb-12 leading-relaxed font-light hero-animate-delay-2">
+                    Step into a realm where traditional Assamese Muga and Paat silk meet the precision of master tailoring. Each bespoke garment is a dialogue between heritage and your personal narrative.
+                </p>
+                <a class="inline-block border border-white/20 text-white font-label text-[10px] tracking-[0.3rem] uppercase px-10 md:px-16 py-5 md:py-6 hover:bg-white hover:text-black transition-all duration-700 hero-animate-delay-3" href="#inquiry">
+                    Begin Your Journey
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Process Section -->
+    <section class="bg-[#1b1c1c] py-24 md:py-40 px-6 md:px-24 border-y border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24 items-start">
+            <div class="md:col-span-4 md:sticky md:top-40" data-reveal>
+                <h2 class="font-serif text-4xl md:text-6xl text-white mb-8 md:mb-10 leading-tight tracking-tighter">The Art of the<br /><span class="italic">Crafted Silhouette</span></h2>
+                <div class="w-12 h-px bg-secondary mb-8 md:mb-10"></div>
+                <p class="font-body text-white/40 leading-relaxed font-light text-sm max-w-xs">
+                    The KUHI bespoke experience is a meticulous three-stage evolution, ensuring every thread aligns with your essence.
+                </p>
+            </div>
+            <div class="md:col-span-8 space-y-24 md:space-y-48">
+                <!-- Step 1 -->
+                <div class="flex flex-col md:flex-row gap-8 md:gap-16 group" data-reveal>
+                    <div class="md:w-1/2 aspect-[4/5] overflow-hidden bg-[#252626]">
+                        <img class="w-full h-full object-cover opacity-80 transition-all duration-1000 group-hover:scale-110 group-hover:opacity-100 grayscale" alt="The Consultation — Artisan measuring golden Muga silk" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8BaKw9K31ed9w1AtSOTH1-amBFrl_C7v_3pzdKtEZMtLthO5QjAZ9K6xMdWlcIGQL-gkD0EiE22BGFzbhwYzNu6s0smTPZREp9BccML5UQ70gmOVxKLsc4x5Mbxkly0AbaqYPgEQmNKxNPqNAMkCJ5MHkc-6cTDIQCh1-I6PCQCEfoXv-BGl5TMNeYdv_3K-3XERUwipRI-VCCrQAS9OqnFq2Tf0G1lYJhTsMmQtY8Pro_jIpk4ano0H0yPDZrU2mgcDkG2dtIe2-" />
+                    </div>
+                    <div class="md:w-1/2 flex flex-col justify-center">
+                        <span class="font-serif text-[6rem] md:text-[10rem] text-white/5 leading-none -mb-8 md:-mb-16 -ml-4 md:-ml-8 select-none">01</span>
+                        <h3 class="font-serif text-2xl md:text-3xl text-white mb-4 md:mb-6 tracking-tight relative z-10">The Consultation</h3>
+                        <p class="font-body text-white/40 max-w-sm leading-relaxed font-light text-sm">
+                            A private session to explore textures, color palettes, and silhouettes. We discuss the occasion, your personal style, and the rich history of the weaves you choose.
+                        </p>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex flex-col md:flex-row-reverse gap-8 md:gap-16 group" data-reveal>
+                    <div class="md:w-1/2 aspect-[4/5] overflow-hidden bg-[#252626]">
+                        <img class="w-full h-full object-cover opacity-80 transition-all duration-1000 group-hover:scale-110 group-hover:opacity-100 grayscale" alt="The Toile & Fitting — Master tailor adjusting a garment" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBqcmgxVmRZsJop5klFrM1cg7nG81S9B_O61YjdaoA1HugLusnNXGwLMM4ANdQP4MssQ7NidYtnti3BnntfabuQdfxmCh8A3OoIBF9mpcOjY3FA5erU00DjJ2lB64JfuMGZltPPZBYFuF85dfrdQwYaveN1pnjHg6QDt2h4ewu7QI5fcVYE6e4ca1gCEc9Mbd632ngpdL8lrKC4XUA_2G7etKoFMuIF0CH2ImEhe8fvzekuo2pesLjGuSj4J4FW6bzYdkwPkimGjcR" />
+                    </div>
+                    <div class="md:w-1/2 flex flex-col justify-center md:items-end md:text-right">
+                        <span class="font-serif text-[6rem] md:text-[10rem] text-white/5 leading-none -mb-8 md:-mb-16 md:-mr-8 select-none">02</span>
+                        <h3 class="font-serif text-2xl md:text-3xl text-white mb-4 md:mb-6 tracking-tight relative z-10">The Toile &amp; Fitting</h3>
+                        <p class="font-body text-white/40 max-w-sm leading-relaxed font-light text-sm">
+                            We create a prototype 'toile' to perfect the fit. This architectural stage ensures the drape is impeccable before the final silk is ever touched by a needle.
+                        </p>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col md:flex-row gap-8 md:gap-16 group" data-reveal>
+                    <div class="md:w-1/2 aspect-[4/5] overflow-hidden bg-[#252626]">
+                        <img class="w-full h-full object-cover opacity-80 transition-all duration-1000 group-hover:scale-110 group-hover:opacity-100 grayscale" alt="The Final Loom — Hand-embroidered gold thread on silk" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA31qMF4qAL9wfKdUvW0FJn7b7MZpoWUDP1P0j53nVee-LDJym0_0UHxErscHJFanG2U78_d2PlfYYJpHKdyZT1nnvziQoTPx6f0rUpIsCWoMCJXelg4ciET_HmFqMpWfkoIkg8Tr_yQZIjzUqaTh-ynHdEXv9eSsJm7X8ZfKOoNuZRny0ZlvC0K2-JB9xxQqANLxwFaSRj5FwRhJdIoE8PpIGfH7KsBMWFkpBrchp0eEkaf_8q0IXOpnwDsrt4niZDiHtUWPWKd9a" />
+                    </div>
+                    <div class="md:w-1/2 flex flex-col justify-center">
+                        <span class="font-serif text-[6rem] md:text-[10rem] text-white/5 leading-none -mb-8 md:-mb-16 -ml-4 md:-ml-8 select-none">03</span>
+                        <h3 class="font-serif text-2xl md:text-3xl text-white mb-4 md:mb-6 tracking-tight relative z-10">The Final Loom</h3>
+                        <p class="font-body text-white/40 max-w-sm leading-relaxed font-light text-sm">
+                            Your garment is hand-woven by our master artisans. The final result is a masterpiece of Assamese couture, uniquely yours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Section -->
+    <section class="bg-[#1b1c1c] text-white py-24 md:py-40 px-6 md:px-24" id="inquiry">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-32">
+                <div data-reveal>
+                    <span class="font-label text-[10px] tracking-[0.4rem] uppercase text-secondary mb-6 md:mb-8 block">Private Appointments</span>
+                    <h2 class="font-serif text-5xl md:text-7xl mb-8 md:mb-10 leading-[1] tracking-tighter">Request an<br /><span class="italic font-extralight">Atelier Session</span></h2>
+                    <p class="font-body text-white/40 text-base md:text-lg mb-12 md:mb-16 font-light leading-relaxed max-w-md">
+                        Connect with our design team to begin your bespoke journey. We offer both in-atelier and virtual consultations for global clients.
+                    </p>
+                    <div class="space-y-8 md:space-y-12">
+                        <div>
+                            <p class="font-label text-[9px] tracking-[0.2rem] uppercase text-white/30 mb-3 md:mb-4">Flagship Atelier</p>
+                            <p class="font-serif text-lg md:text-xl text-white tracking-tight">Guwahati, Assam</p>
+                        </div>
+                        <div>
+                            <p class="font-label text-[9px] tracking-[0.2rem] uppercase text-white/30 mb-3 md:mb-4">International Showroom</p>
+                            <p class="font-serif text-lg md:text-xl text-white tracking-tight">Mayfair, London</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-10 md:space-y-16" data-reveal data-reveal-delay="2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+                        <div class="flex flex-col space-y-3 md:space-y-4">
+                            <label class="font-label text-[9px] tracking-[0.2rem] uppercase text-white/40">Full Name</label>
+                            <input class="bg-transparent border-0 border-b border-white/10 focus:border-white focus:ring-0 text-white font-body py-3 md:py-4 placeholder-white/10 transition-colors text-sm" placeholder="Alexander Rowe" type="text" />
+                        </div>
+                        <div class="flex flex-col space-y-3 md:space-y-4">
+                            <label class="font-label text-[9px] tracking-[0.2rem] uppercase text-white/40">Email Address</label>
+                            <input class="bg-transparent border-0 border-b border-white/10 focus:border-white focus:ring-0 text-white font-body py-3 md:py-4 placeholder-white/10 transition-colors text-sm" placeholder="studio@client.com" type="email" />
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-3 md:space-y-4">
+                        <label class="font-label text-[9px] tracking-[0.2rem] uppercase text-white/40">Occasion / Interest</label>
+                        <input class="bg-transparent border-0 border-b border-white/10 focus:border-white focus:ring-0 text-white font-body py-3 md:py-4 placeholder-white/10 transition-colors text-sm" placeholder="Wedding Couture, Custom Shirting..." type="text" />
+                    </div>
+                    <div class="flex flex-col space-y-3 md:space-y-4">
+                        <label class="font-label text-[9px] tracking-[0.2rem] uppercase text-white/40">Message</label>
+                        <textarea class="bg-transparent border-0 border-b border-white/10 focus:border-white focus:ring-0 text-white font-body py-3 md:py-4 placeholder-white/10 resize-none transition-colors text-sm" placeholder="Share your vision with us..." rows="4"></textarea>
+                    </div>
+                    <button class="w-full bg-white text-black font-label text-[10px] tracking-[0.4rem] uppercase py-6 md:py-8 hover:bg-secondary hover:text-white transition-all duration-700" type="submit">
+                        Submit Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote / Divider -->
+    <section class="bg-[#1b1c1c] py-28 md:py-40 border-t border-white/5 flex justify-center items-center px-6 md:px-12">
+        <div class="max-w-4xl text-center" data-reveal>
+            <span class="material-symbols-outlined text-secondary text-3xl md:text-4xl mb-8 md:mb-12 opacity-50 block">format_quote</span>
+            <blockquote class="font-serif text-2xl md:text-5xl italic text-white leading-[1.3] font-light tracking-tight">
+                "True luxury is not just what you wear, but the whisper of the loom that brought it to life."
+            </blockquote>
+            <div class="mt-8 md:mt-12 flex flex-col items-center">
+                <div class="w-8 h-px bg-white/20 mb-4 md:mb-6"></div>
+                <p class="font-label text-[9px] tracking-[0.3rem] uppercase text-white/40">Aruna Das, Master Weaver</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#000000] flex flex-col items-center w-full px-6 md:px-12 py-24 md:py-32 border-t border-white/5">
+    <img src="assets/kuhi-logo-white.png" alt="KUHI Gentle Luxury" class="h-28 md:h-36 w-auto object-contain mb-8 md:mb-10 opacity-40" />
+    <div class="flex flex-wrap justify-center gap-x-8 md:gap-x-12 gap-y-4 md:gap-y-6 mb-12 md:mb-16">
+        <a class="text-white/40 font-label text-[9px] tracking-[0.2rem] uppercase hover:text-white transition-all duration-500" href="#">Privacy Policy</a>
+        <a class="text-white/40 font-label text-[9px] tracking-[0.2rem] uppercase hover:text-white transition-all duration-500" href="#">Shipping &amp; Returns</a>
+        <a class="text-white/40 font-label text-[9px] tracking-[0.2rem] uppercase hover:text-white transition-all duration-500" href="#">Sustainability</a>
+        <a class="text-white/40 font-label text-[9px] tracking-[0.2rem] uppercase hover:text-white transition-all duration-500" href="#">Contact</a>
+    </div>
+    <div class="text-white/20 font-label text-[9px] tracking-[0.2rem] uppercase">
+        &copy; 2025 KUHI ATELIER. ALL RIGHTS RESERVED.
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

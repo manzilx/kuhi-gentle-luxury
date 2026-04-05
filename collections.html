@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KUHI ATELIER | The Collections</title>
+    <meta name="description" content="From the timeless luster of golden Muga to contemporary silhouettes, each piece is a labor of soul and silence." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#FCF9F8",
+                        "on-surface": "#1b1c1c",
+                        "primary": "#000000",
+                        "on-primary": "#FFFFFF",
+                        "secondary": "#775A19",
+                        "surface-variant": "#E4E2E1",
+                        "on-surface-variant": "#444748",
+                        "outline": "#747878",
+                        "outline-variant": "#C4C7C7",
+                        "background": "#FCF9F8",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-container": "#f0eded",
+                        "surface-container-high": "#eae7e7",
+                        "surface-container-highest": "#e4e2e1",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-primary-container": "#858383",
+                        "primary-container": "#1c1b1b"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px", lg: "0px", xl: "0px", full: "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Newsreader", "serif"],
+                        body: ["Manrope", "sans-serif"],
+                        label: ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface">
+
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl transition-all duration-500 border-b border-outline-variant/10">
+    <div class="flex justify-between items-center w-full px-6 md:px-12 py-4 md:py-6">
+        <div class="flex items-center space-x-8 md:space-x-12">
+            <a href="index.html">
+                <img src="assets/kuhi-logo-transparent.png" alt="KUHI" class="h-20 md:h-24 w-auto object-contain" />
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a class="text-primary pb-1 hover:text-secondary transition-all duration-300 font-medium text-[11px] tracking-[0.15rem] uppercase" href="index.html">Home</a>
+                <a class="text-secondary border-b border-secondary pb-1 font-medium text-[11px] tracking-[0.15rem] uppercase" href="collections.html">Collections</a>
+                <a class="text-primary pb-1 hover:text-secondary transition-all duration-300 font-medium text-[11px] tracking-[0.15rem] uppercase" href="bespoke.html">Bespoke</a>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4 md:space-x-6">
+            <span class="material-symbols-outlined text-primary cursor-pointer hover:text-secondary transition-colors">shopping_bag</span>
+            <span class="material-symbols-outlined text-primary cursor-pointer hover:text-secondary transition-colors">person</span>
+            <button class="md:hidden hover:opacity-60 transition-opacity" data-mobile-menu-toggle>
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu light">
+    <button class="absolute top-8 right-8" data-mobile-menu-close>
+        <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="collections.html">Collections</a>
+    <a href="bespoke.html">Bespoke</a>
+</div>
+
+<!-- Cinematic Hero -->
+<header class="relative w-full h-screen flex flex-col justify-center items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img alt="Muga Silk Texture" class="w-full h-full object-cover scale-110 opacity-40 brightness-110" data-parallax="0.08" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoR3SALwseLuFICpF2MTjLS8XLIatuYXfCpz4gIBefIo493x1jBBIEUGJ4ME9zubzRtXY00utAHanG4RR20ziQCvHE_yOa-y32gxKAMxcIb3FaYoEmB9Ze8jpeEnhaW27drKXPoCwLEuHdKS2teuIIuWl6nQkyMFuvBJf_ITy4O6YTY4slzHqoB1KInVEfg-m6SDtg0_RQ8OQqCTL6tbbcyW2sMKtxwMFQdUGbetdvEPwpCRuhc7NbMMj-nG1PQ80xTf6R9dGQgAKe" />
+        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+    </div>
+    <div class="relative z-10 text-center space-y-6 md:space-y-8 px-6 max-w-4xl">
+        <p class="font-label text-[11px] tracking-[0.5rem] uppercase text-secondary hero-animate">A Heritage Reimagined</p>
+        <h1 class="text-6xl md:text-[10rem] font-headline font-extralight tracking-tighter text-primary leading-[0.8] mb-8 md:mb-12 hero-animate-delay-1">The Collections</h1>
+        <p class="max-w-xl mx-auto font-body text-on-surface-variant leading-relaxed font-light text-sm md:text-base italic hero-animate-delay-2">
+            From the timeless luster of golden Muga to contemporary silhouettes, each piece is a labor of soul and silence.
+        </p>
+        <div class="pt-6 md:pt-8 hero-animate-delay-3">
+            <span class="material-symbols-outlined text-2xl md:text-3xl animate-bounce text-outline">keyboard_double_arrow_down</span>
+        </div>
+    </div>
+</header>
+
+<!-- Sub-Nav & Filter Bar -->
+<section class="w-full bg-surface border-y border-outline-variant/20 sticky top-[60px] md:top-[72px] z-40">
+    <div class="max-w-none px-6 md:px-12 py-4 md:py-6 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
+        <div class="flex space-x-6 md:space-x-12 overflow-x-auto no-scrollbar w-full md:w-auto">
+            <button class="font-label text-[10px] tracking-[0.2rem] uppercase text-primary border-b border-primary pb-1 whitespace-nowrap">All Works</button>
+            <button class="font-label text-[10px] tracking-[0.2rem] uppercase text-on-surface-variant hover:text-primary transition-colors pb-1 whitespace-nowrap">Muga Silk</button>
+            <button class="font-label text-[10px] tracking-[0.2rem] uppercase text-on-surface-variant hover:text-primary transition-colors pb-1 whitespace-nowrap">Contemporary</button>
+            <button class="font-label text-[10px] tracking-[0.2rem] uppercase text-on-surface-variant hover:text-primary transition-colors pb-1 whitespace-nowrap">Bespoke</button>
+            <button class="font-label text-[10px] tracking-[0.2rem] uppercase text-on-surface-variant hover:text-primary transition-colors pb-1 whitespace-nowrap">Eri Heritage</button>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+            <div class="flex items-center space-x-2 cursor-pointer group">
+                <span class="font-label text-[9px] tracking-widest uppercase text-on-surface-variant group-hover:text-primary transition-colors">Sort by</span>
+                <span class="material-symbols-outlined text-base text-on-surface-variant">expand_more</span>
+            </div>
+            <div class="flex items-center space-x-3 cursor-pointer border-l border-outline-variant/30 pl-8 group">
+                <span class="material-symbols-outlined text-lg text-on-surface-variant group-hover:text-primary transition-colors">tune</span>
+                <span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant group-hover:text-primary transition-colors">Filter</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Editorial Product Grid -->
+<main class="max-w-none px-6 md:px-12 py-16 md:py-32 bg-surface">
+    <div class="editorial-grid space-y-16 md:space-y-0">
+        <!-- Item 1: Large Featured -->
+        <div class="group flex flex-col span-7 lg:pr-12" data-reveal>
+            <div class="relative overflow-hidden aspect-[4/5] bg-surface-container-low">
+                <img alt="The Golden Muga Mekhela" class="w-full h-full object-cover img-editorial" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5igyM8O7ls00xhoCuMdG2RT0tjPQiiPxwoq-uFRR-jvKK8BogxIWEEu7kywW91rgdlso1RIm3MLinBVHjOZbdKPBFevlS7III8k6oOhdpuh1Dcqn8oQxcNO6oNyp5S5xA2yfeLlHdisxFaCNPMmii_TGhdZ8Zf0FP6DG6awnOyCrEfXZsylcSywfOWOuGNfWPGmpiz9Z1F-qZhvrgbncD_Whn8oMmtujEq5M93UiNB_iCVLOLoelXrelW9kEOPZFlKJ1Q_lbS3URR" />
+                <div class="absolute top-6 md:top-8 right-6 md:right-8">
+                    <span class="font-label text-[9px] tracking-[0.3rem] uppercase bg-white/90 backdrop-blur text-primary px-3 md:px-4 py-2 border border-outline-variant/20">Signature Piece</span>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-12 space-y-4 max-w-lg">
+                <div class="flex justify-between items-end border-b border-outline-variant/30 pb-4">
+                    <div class="space-y-1">
+                        <h3 class="text-3xl md:text-4xl font-headline font-light tracking-tight group-hover:text-secondary transition-colors">The Golden Muga Mekhela</h3>
+                        <p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Hand-loomed golden silk</p>
+                    </div>
+                    <span class="font-body text-lg md:text-xl font-light text-primary">&pound;2,65,000</span>
+                </div>
+                <div class="flex justify-between items-center pt-2">
+                    <p class="font-body text-xs text-on-surface-variant leading-relaxed max-w-xs">Traditional red 'buta' motifs woven with precision over six months.</p>
+                    <a class="font-label text-[10px] tracking-[0.25rem] uppercase text-primary border-b border-primary hover:text-secondary hover:border-secondary transition-all pb-1 whitespace-nowrap" href="#">View Piece</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 2: Vertical Narrow -->
+        <div class="group flex flex-col span-5 lg:pt-48" data-reveal data-reveal-delay="2">
+            <div class="relative overflow-hidden aspect-[2/3] bg-surface-container-low">
+                <img alt="The Ivory Eri Drape" class="w-full h-full object-cover img-editorial" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB0sA_gYMYOCppAKJDh2tsNvuE6cYXbRB4z8wERxq7qKIXKvHr498WrmE7v3J9lnKNd5k_m_j1_ym9NLFRyHgVkeIslt0r4GUgPffjAKBAk4x_5IE4Z4rfvrjoNwBD_9Bx9RwLmNemU7YorFwHuktOSEZ3NTSL8g0zweZIdlZ77OX4dbUeWJhbEuUSjzr9Pshom3YCLtQ52siKomCOl1XTFNebhpbzloEemAJdY4l4rZcbn4KX1W5pAQ_2IBvUsVyVWu-gXNA4zvIc" />
+            </div>
+            <div class="mt-8 md:mt-10 space-y-4">
+                <div class="flex justify-between items-end border-b border-outline-variant/30 pb-4">
+                    <div class="space-y-1">
+                        <h3 class="text-2xl md:text-3xl font-headline font-light tracking-tight group-hover:text-secondary transition-colors">The Ivory Eri Drape</h3>
+                        <p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Natural Ahimsa Silk</p>
+                    </div>
+                    <span class="font-body text-lg font-light text-primary">&pound;1,45,000</span>
+                </div>
+                <div class="flex justify-between items-center pt-2">
+                    <p class="font-body text-xs text-on-surface-variant max-w-[200px]">Finished with hand-knotted fringe and raw edge detailing.</p>
+                    <a class="font-label text-[10px] tracking-[0.25rem] uppercase text-primary border-b border-primary hover:text-secondary hover:border-secondary transition-all pb-1" href="#">Inquire</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 3: Full Width Editorial Break -->
+        <div class="group flex flex-col span-12 pt-16 md:pt-32 pb-8 md:pb-16" data-reveal="scale">
+            <div class="relative overflow-hidden aspect-[16/9] md:aspect-[21/9] bg-surface-container-low">
+                <img alt="The Atelier Series" class="w-full h-full object-cover grayscale opacity-90 transition-all duration-1000 group-hover:grayscale-0 group-hover:opacity-100" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUgnmhaLh4eXjR2a2YjsjJAsgHvrvDGeOchPsCOWdxqeAvOnubeTfTopMY2gpp_oBeD5d4P4f0ny5105_mzx5RJmxrSUGs_Lqdlx0zwjSRabI0crfMq86oSfRooNkTl_KIy7fE5ZXYe4iDTqv76giVEyveXmU3OnvFU_fDvWnbv2PK0-9f6i8Xg1UN4mdz8MRns8ZEj-NeT8kwvOOvPdrBwXFG3xCdjl3uD_AyMkTM_p15uqhdmc_OUw4rHfnqe688Iph32bFrip9k" />
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700"></div>
+                <div class="absolute bottom-8 md:bottom-12 left-8 md:left-12 text-white">
+                    <p class="font-label text-[10px] tracking-[0.4rem] uppercase mb-3 md:mb-4">New Release</p>
+                    <h2 class="text-3xl md:text-5xl font-headline font-thin">The Atelier Series: No. 04</h2>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-12 flex flex-col md:flex-row justify-between items-start gap-6 md:gap-8">
+                <div class="max-w-xl">
+                    <p class="font-body text-sm text-on-surface-variant leading-loose italic">
+                        A dialogue between architectural form and fluid fabric. This collection explores the rigid beauty of the loom structure itself, reimagined for the contemporary silhouette.
+                    </p>
+                </div>
+                <div class="flex flex-col items-start md:items-end space-y-4">
+                    <span class="font-body text-xl md:text-2xl font-light text-primary">From &pound;2,40,000</span>
+                    <a class="bg-primary text-on-primary px-8 md:px-10 py-3 md:py-4 font-label text-[10px] tracking-[0.3rem] uppercase hover:bg-secondary transition-colors duration-500" href="#">Explore Series</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 4: Wide/Landscape -->
+        <div class="group flex flex-col span-8 lg:pt-32" data-reveal>
+            <div class="relative overflow-hidden aspect-[16/10] bg-surface-container-low">
+                <img alt="Nocturnal Silk Ensemble" class="w-full h-full object-cover img-editorial" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDLpYFSRJ-K7h7jWzH6QAeGhPsZh5D3SkOAkBSNesZayFGdwaBxPYDICk3Pg58Zk-vbdbP9imG91fExXG5U9JG-q-sZqoioh1WyHzVTqZY7S6PsgJilcTl-a23_nOf1U3pZ3ZxzPalh5xtZb1XnHKQOve5kZphwlGsm4-4vrnbjr4ZMN77v3gDWKAYF727RY_HC5iOuytwpqZUMUPcLEWVTwAYWLR5cCf8OLZ031T10BZlexp1ZLINcRXXBJO-ZY6X-s9GT0H907Gd" />
+            </div>
+            <div class="mt-8 md:mt-10 space-y-4">
+                <div class="flex justify-between items-end border-b border-outline-variant/30 pb-4">
+                    <div class="space-y-1">
+                        <h3 class="text-2xl md:text-3xl font-headline font-light tracking-tight group-hover:text-secondary transition-colors">Nocturnal Silk Ensemble</h3>
+                        <p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Midnight Mulberry Silk</p>
+                    </div>
+                    <span class="font-body text-lg font-light text-primary">&pound;3,80,000</span>
+                </div>
+                <div class="flex justify-between items-center pt-2">
+                    <p class="font-body text-xs text-on-surface-variant max-w-sm">Architectural draping meeting fluid movement. Bespoke sizing and detailing available.</p>
+                    <a class="font-label text-[10px] tracking-[0.25rem] uppercase text-primary border-b border-primary hover:text-secondary hover:border-secondary transition-all pb-1" href="#">Inquire</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 5: Small Detail -->
+        <div class="group flex flex-col span-4 lg:pt-64 lg:pl-12" data-reveal data-reveal-delay="2">
+            <div class="relative overflow-hidden aspect-square bg-surface-container-low">
+                <img alt="Indigo Soul Wrap" class="w-full h-full object-cover img-editorial" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG_agA-q5k-JA-yxQ8y2wop-EVxFtvRR616rNbEZ0omFvDUEKp0T1uN_9XNOHXGa8eqJU_hQBx3WpN_vtOP1CTEkHXWNoX1-Pl-b1NhpPySsRZRs_-Xc-v1QPt22g4f41wX0CLvfVr4iti2TxIHWGIRlJoyxS_1bR70V-RznJi7kTNqE34SPFPV1qkAScgk1O9YbtM69Zo51gBJRGjb_g2sObnDoPBFDQY5g3CkR1Cr3QZq8ZuEq006oYUHMH5vKCTwjv8uY2gJObF" />
+            </div>
+            <div class="mt-8 md:mt-10 space-y-4">
+                <div class="flex justify-between items-end border-b border-outline-variant/30 pb-4">
+                    <div class="space-y-1">
+                        <h3 class="text-xl md:text-2xl font-headline font-light tracking-tight group-hover:text-secondary transition-colors">Indigo Soul Wrap</h3>
+                        <p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Organic Indigo Eri</p>
+                    </div>
+                    <span class="font-body text-lg font-light text-primary">&pound;95,000</span>
+                </div>
+                <div class="flex justify-between items-center pt-2">
+                    <p class="font-body text-[11px] text-on-surface-variant max-w-[150px]">Each piece carries a unique oceanic gradient.</p>
+                    <a class="font-label text-[10px] tracking-[0.25rem] uppercase text-primary border-b border-primary hover:text-secondary hover:border-secondary transition-all pb-1" href="#">View Piece</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Bespoke Section -->
+<section class="w-full py-28 md:py-40 bg-primary text-on-primary px-6 md:px-12 overflow-hidden relative">
+    <div class="absolute right-0 top-0 h-full w-1/2 opacity-30 pointer-events-none hidden md:block">
+        <img alt="Shadow play" class="w-full h-full object-cover" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfdjG-YRPz-DrJQOnU6OGha8QsKVbO8z-zc7PgnEyMO4n3EmGfxWGNEAae9-CxImHnH5ndX7FUsvDPOIzlVudjcS2IlNsRBkT5lu2XCoafWeygQ933dOvyVGRGg2viKiGdvU_mDeionCT_GrHMHysYryaefMECfANJV7acmPHojIviVbVKsc7PfrrNPyqB2g4nkjftGslebR3RcdGKWPRdQgJN-9bc2P35nOu179EmlwDOzPRWEWtLl_QhaeTjf-1ec-vVs2_zOczY" />
+    </div>
+    <div class="max-w-7xl mx-auto flex flex-col items-start space-y-8 md:space-y-12 relative z-10" data-reveal="left">
+        <span class="font-label text-[11px] tracking-[0.5rem] uppercase text-secondary-fixed-dim">The Bespoke Experience</span>
+        <h2 class="text-5xl md:text-8xl font-headline font-thin tracking-tight max-w-4xl leading-[1.1]">Craft your legacy with our Master Weavers.</h2>
+        <p class="font-body text-on-primary-container max-w-lg text-sm md:text-base leading-loose font-light">
+            Collaborate directly with our artisans to design a one-of-a-kind garment that weaves your personal narrative into the heritage of Assamese silk.
+        </p>
+        <a href="bespoke.html" class="bg-surface text-primary px-12 md:px-16 py-5 md:py-6 font-label text-[11px] tracking-[0.3rem] uppercase hover:bg-secondary hover:text-on-primary transition-all duration-700">Book A Private Consultation</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="flex flex-col items-center w-full px-6 md:px-12 py-24 md:py-32 bg-black text-white">
+    <img src="assets/kuhi-logo-white.png" alt="KUHI Gentle Luxury" class="h-28 md:h-36 w-auto object-contain mb-10 md:mb-14 opacity-40" />
+    <div class="flex flex-wrap justify-center gap-x-8 md:gap-x-16 gap-y-6 md:gap-y-8 mb-16 md:mb-20">
+        <a class="font-label text-[10px] tracking-[0.2rem] uppercase text-white/60 hover:text-white transition-all duration-500" href="#">Privacy Policy</a>
+        <a class="font-label text-[10px] tracking-[0.2rem] uppercase text-white/60 hover:text-white transition-all duration-500" href="#">Shipping &amp; Returns</a>
+        <a class="font-label text-[10px] tracking-[0.2rem] uppercase text-white/60 hover:text-white transition-all duration-500" href="#">Sustainability</a>
+        <a class="font-label text-[10px] tracking-[0.2rem] uppercase text-white/60 hover:text-white transition-all duration-500" href="#">Contact</a>
+    </div>
+    <div class="w-24 h-px bg-white/20 mb-8 md:mb-12"></div>
+    <p class="font-label text-[10px] tracking-[0.2rem] uppercase text-white/30 text-center">&copy; 2025 KUHI ATELIER. HANDCRAFTED IN ASSAM.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

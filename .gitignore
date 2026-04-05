@@ -1,0 +1,15 @@
+# Dependencies
+KuhiApp/node_modules/
+
+# Expo
+KuhiApp/.expo/
+
+# macOS
+.DS_Store
+
+# Claude
+.claude/
+
+# IDE
+.vscode/
+.idea/

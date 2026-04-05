@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KUHI ATELIER | Heritage Reimagined</title>
+    <meta name="description" content="KUHI represents the pinnacle of Assamese couture — fusing the organic luxury of hand-spun Muga silk with modern silhouettes." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#FCF9F8",
+                        "on-surface": "#1A1A1A",
+                        "primary": "#1A1A1A",
+                        "on-primary": "#FFFFFF",
+                        "secondary": "#775A19",
+                        "surface-variant": "#E4E2E1",
+                        "on-surface-variant": "#444748",
+                        "outline": "#747878",
+                        "outline-variant": "#C4C7C7",
+                        "background": "#FCF9F8",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-container": "#f0eded",
+                        "surface-container-high": "#eae7e7",
+                        "surface-container-highest": "#e4e2e1"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px", lg: "0px", xl: "0px", full: "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Newsreader", "serif"],
+                        body: ["Manrope", "sans-serif"],
+                        label: ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface">
+
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#FCF9F8]/70 backdrop-blur-md transition-all duration-500">
+    <div class="flex justify-between items-center w-full px-6 md:px-16 py-6 md:py-8 max-w-none">
+        <a href="index.html">
+            <img src="assets/kuhi-logo-transparent.png" alt="KUHI" class="h-20 md:h-24 w-auto object-contain" />
+        </a>
+        <div class="hidden md:flex items-center space-x-12">
+            <a class="text-primary border-b border-primary pb-1 font-medium text-[10px] tracking-[0.2rem] uppercase" href="index.html">Home</a>
+            <a class="text-primary/60 hover:text-primary transition-all duration-300 font-medium text-[10px] tracking-[0.2rem] uppercase" href="collections.html">Collections</a>
+            <a class="text-primary/60 hover:text-primary transition-all duration-300 font-medium text-[10px] tracking-[0.2rem] uppercase" href="bespoke.html">Bespoke</a>
+        </div>
+        <div class="flex items-center space-x-6 md:space-x-8">
+            <button class="hover:opacity-60 transition-opacity">
+                <span class="material-symbols-outlined">shopping_bag</span>
+            </button>
+            <button class="hover:opacity-60 transition-opacity">
+                <span class="material-symbols-outlined">person</span>
+            </button>
+            <button class="md:hidden hover:opacity-60 transition-opacity" data-mobile-menu-toggle>
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu light">
+    <button class="absolute top-8 right-8" data-mobile-menu-close>
+        <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="collections.html">Collections</a>
+    <a href="bespoke.html">Bespoke</a>
+</div>
+
+<!-- Hero Section -->
+<header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+    <div class="absolute inset-0 z-0">
+        <img alt="High fashion Muga Silk editorial" class="w-full h-full object-cover grayscale brightness-105" data-parallax="0.08" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhfywPPZvRsziFyyfqtpmFeJw3EM2actbWI47Po5VW-_8QQfIvzBuw02wVz8jYdlyzPXq3yVN1X2D9oFElpmuQ323Th7MsOzadj4y_WfofhRxYaFIp3X2O9d_Qa9Fztyx-6pU1-hIJzd0q_ho8brNTDHRzd-Yga_hIz88HnsLm4ZmlwlUHJItXHobt4HdiLQKJwkQICLzihl-jc0jbKe8b7QauIIuBX_6pzn6bKx49LnhUihx_x_1RnqljwupltL8rDybmEXcQb7RA" />
+        <div class="absolute inset-0 bg-gradient-to-b from-surface/10 via-transparent to-surface"></div>
+    </div>
+    <div class="relative z-10 text-center space-y-8 md:space-y-12 max-w-5xl px-6">
+        <span class="text-[10px] tracking-[0.4rem] uppercase font-medium text-primary/60 block hero-animate">The Autumn / Winter Series</span>
+        <h1 class="text-primary text-6xl md:text-[10rem] font-serif tracking-tight leading-[0.85] font-extralight hero-animate-delay-1">
+            Heritage <br /> <span class="italic font-light">Reimagined</span>
+        </h1>
+        <div class="flex flex-col items-center gap-8 hero-animate-delay-2">
+            <a href="collections.html" class="bg-primary text-on-primary px-10 md:px-14 py-5 md:py-6 text-[10px] tracking-[0.3rem] uppercase font-medium hover:bg-secondary transition-all duration-500">
+                Explore Collection
+            </a>
+            <span class="material-symbols-outlined animate-bounce text-primary/30">expand_more</span>
+        </div>
+    </div>
+</header>
+
+<!-- Philosophy Section -->
+<section class="py-32 md:py-72 bg-surface">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-16">
+        <div class="grid md:grid-cols-12 gap-16 md:gap-24 items-start">
+            <div class="md:col-span-6 space-y-8 md:space-y-12" data-reveal>
+                <span class="text-primary text-[10px] tracking-[0.4rem] uppercase font-bold block opacity-40">01 / Philosophy</span>
+                <h2 class="text-4xl md:text-7xl font-serif leading-[1.1] text-primary font-light">
+                    Every thread tells a story of a thousand years.
+                </h2>
+            </div>
+            <div class="md:col-span-5 md:col-start-8 space-y-8 md:space-y-12 pt-4 md:pt-32" data-reveal data-reveal-delay="2">
+                <p class="text-on-surface-variant font-body text-lg md:text-xl leading-relaxed font-light">
+                    KUHI represents the pinnacle of Assamese couture. We transcend traditional boundaries by fusing the organic luxury of hand-spun Muga silk with modern silhouettes that command presence.
+                </p>
+                <p class="text-primary font-body text-lg md:text-xl leading-relaxed italic border-l border-primary/10 pl-8">
+                    This is not just clothing; it is the architectural preservation of craftsmanship.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Collection Grid -->
+<section class="bg-white py-32 md:py-48">
+    <div class="max-w-[1600px] mx-auto px-6 md:px-16">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-32 border-b border-primary/5 pb-12 md:pb-16" data-reveal>
+            <div class="space-y-4">
+                <span class="text-[10px] tracking-[0.4rem] uppercase text-primary/40 font-medium">Selected Works</span>
+                <h3 class="text-5xl md:text-6xl font-serif font-light">The Atelier Series</h3>
+            </div>
+            <a class="text-[10px] tracking-[0.2rem] uppercase font-semibold text-primary hover:text-secondary transition-colors mt-6 md:mt-0" href="collections.html">View Entire Archive</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-24">
+            <!-- Product 1 -->
+            <div class="group cursor-pointer" data-reveal data-reveal-delay="1">
+                <a href="collections.html" class="block">
+                    <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-highest mb-8 md:mb-12">
+                        <img alt="Golden Gossamer — Muga Silk Hand-Loomed" class="w-full h-full object-cover img-editorial img-desat" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1Lxv_tSER2OdCeMdD77_2Mi8SsFzYo1bH5kTgwaxXq5HqK6jg1InodOoBfZhNDZIe-NCc9_w3h366F10GgbClPBkLVSWEO22TcPCBNqsJ8vfhzt67z9X7VVvZuROlC70jO5-tmiIJVPYzCHBHyPD6nq76bI1rhkik__Rbg-uhCdUJdAYEZlJOx5JffBxY_st1MLY3uFALODzRonmb43LXvxmqKKjqHWtbsMB8BKGDcpdEaF_ZJe9cwzJCWlQbRDmSLs6Fa2UQQ9-J" />
+                        <div class="absolute bottom-6 md:bottom-8 left-6 md:left-8">
+                            <span class="bg-white px-4 md:px-5 py-2 text-[9px] tracking-[0.25rem] uppercase font-bold text-primary">Limited</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-baseline px-1 md:px-2">
+                        <div>
+                            <h4 class="font-serif text-2xl md:text-3xl mb-2 font-light">Golden Gossamer</h4>
+                            <p class="text-primary/40 text-[10px] tracking-[0.15rem] uppercase">Muga Silk &bull; Hand-Loomed</p>
+                        </div>
+                        <span class="text-primary font-serif italic text-lg md:text-xl">&pound;1,24,000</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Product 2 (staggered) -->
+            <div class="group cursor-pointer md:mt-32" data-reveal data-reveal-delay="2">
+                <a href="collections.html" class="block">
+                    <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-highest mb-8 md:mb-12">
+                        <img alt="Ivory Heritage — Eri Silk Modern Cut" class="w-full h-full object-cover img-editorial img-desat" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACkwwlNlZItZceh-1kCbT0BaazmFaewM4apN46UWE8JeI_xsjlWhoXQEHhUPJi4YQ0pJbah2Bl2b4KYS2xI35S-Kx6wVdzEmsUaniWHvdVDsOdwlcYaOhsdKeTijqY-2PfyfEEgLawsDQSmqEVpRuDTYYY0zl1eI-YQUXlz_7bsbHIzbvHgjL50ATY2z0uSEyQvejV6od61licfznljja9Lubaze-wJZPxXyypnb5NtJjd789GJ04mfm3dCWIk9eUHJC7eu0NKq1Gf" />
+                    </div>
+                    <div class="flex justify-between items-baseline px-1 md:px-2">
+                        <div>
+                            <h4 class="font-serif text-2xl md:text-3xl mb-2 font-light">Ivory Heritage</h4>
+                            <p class="text-primary/40 text-[10px] tracking-[0.15rem] uppercase">Eri Silk &bull; Modern Cut</p>
+                        </div>
+                        <span class="text-primary font-serif italic text-lg md:text-xl">&pound;88,500</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Product 3 -->
+            <div class="group cursor-pointer" data-reveal data-reveal-delay="3">
+                <a href="collections.html" class="block">
+                    <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-highest mb-8 md:mb-12">
+                        <img alt="Midnight Paat — Paat Silk Gold Inlay" class="w-full h-full object-cover img-editorial img-desat" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj5iynAdVGFIr-_htt3P54Atcw7kIosUBF9ky1CzS5FjfPb5msQp0JynC68_5gbkwxl6KBF6mA2dO7UwPFB-rH7QdEP9tis3zl9NzVq1c-bW3CTU0b9ZfqwZbPOi77N3lKkPwGTItDQnuPT3wgXVCr07Q72I92FcVqikS3WDGqNX7gNL9s4LWRktGbqlifnp02JsDYugfTK7kr4tYj6gYFB6sW77YlwIdS-wcDFTXpIgaLf-F8IbXUNPRoz0d0v0eEBWrfilP5zOc2" />
+                    </div>
+                    <div class="flex justify-between items-baseline px-1 md:px-2">
+                        <div>
+                            <h4 class="font-serif text-2xl md:text-3xl mb-2 font-light">Midnight Paat</h4>
+                            <p class="text-primary/40 text-[10px] tracking-[0.15rem] uppercase">Paat Silk &bull; Gold Inlay</p>
+                        </div>
+                        <span class="text-primary font-serif italic text-lg md:text-xl">&pound;1,42,000</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- The Process (Cinematic Split) -->
+<section class="relative bg-primary overflow-hidden">
+    <div class="grid md:grid-cols-2">
+        <div class="relative h-[400px] md:h-screen" data-reveal="scale">
+            <img alt="Artisanal loom in the KUHI atelier" class="w-full h-full object-cover opacity-50 grayscale contrast-125" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Sycw-ppV2ht7L1A-U2VurkQlgLlS-3aoBBppDDQbgWeokbMNZ573QqbzBLErAEH4GlZGWzgpqLSow7Rzfvy0xElslMU6z8h_sHAvkHYRgocRLvT-Nff5K4CqdiUFSxBeDMseOZRFLtdpYGBeb--HZwxn_YcfdHSIPHVnZu1qYdQpk48lNAzeKs-P_AO86W7xc7jZ0rOWIymQBIyA48yTNCCqQoFne_17o-MHgM0GzttwWHhy88BNL0wWpAKa3Eble7woucNVL8Xr" />
+            <div class="absolute inset-0 flex items-center justify-center">
+                <button class="w-20 h-20 md:w-28 md:h-28 rounded-full border border-white/20 flex items-center justify-center group hover:bg-white transition-all duration-700" aria-label="Play video">
+                    <span class="material-symbols-outlined text-white group-hover:text-primary transition-colors text-2xl md:text-3xl">play_arrow</span>
+                </button>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center px-8 py-20 md:p-32 text-on-primary bg-[#1A1A1A]" data-reveal="right">
+            <span class="text-[10px] tracking-[0.5rem] uppercase font-bold text-white/30 mb-12 md:mb-16 block">The Rhythm of Silence</span>
+            <h2 class="text-4xl md:text-8xl font-serif mb-10 md:mb-16 leading-[1] font-extralight">Slow Luxury, <br /> <span class="italic">Perfected.</span></h2>
+            <p class="text-white/60 font-body text-lg md:text-xl leading-relaxed mb-16 md:mb-24 max-w-md font-light">
+                In our atelier, haste is the enemy of beauty. A single piece takes forty days of rhythmic dedication. Each throw of the shuttle is a heartbeat.
+            </p>
+            <div class="grid grid-cols-2 gap-12 md:gap-16 border-t border-white/5 pt-12 md:pt-16">
+                <div class="space-y-2">
+                    <p class="text-3xl md:text-4xl font-serif font-light counter" data-counter="24000" data-counter-format="comma">0</p>
+                    <p class="text-[9px] tracking-[0.2rem] uppercase text-white/30">Cocoons per Wrap</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-3xl md:text-4xl font-serif font-light counter" data-counter="420">0</p>
+                    <p class="text-[9px] tracking-[0.2rem] uppercase text-white/30">Hours of Weaving</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bespoke Invitation -->
+<section class="py-40 md:py-64 bg-surface text-center">
+    <div class="max-w-4xl mx-auto px-6 md:px-8" data-reveal>
+        <span class="text-[10px] tracking-[0.4rem] uppercase font-bold text-primary/30 mb-8 md:mb-12 block">Private Appointments</span>
+        <h3 class="text-4xl md:text-7xl font-serif mb-8 md:mb-12 font-light leading-tight">Craft your legacy with our Master Weavers.</h3>
+        <p class="text-primary/60 text-base md:text-lg font-body mb-12 md:mb-20 max-w-2xl mx-auto leading-relaxed">Our bespoke service offers a collaborative journey to design a one-of-a-kind garment that tells your personal story.</p>
+        <a href="bespoke.html" class="inline-block bg-transparent border border-primary/20 text-primary px-12 md:px-16 py-5 md:py-6 text-[10px] tracking-[0.3rem] uppercase font-semibold hover:border-primary hover:bg-primary hover:text-on-primary transition-all duration-500">
+            Book a Consultation
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-primary text-on-primary py-24 md:py-32 px-6 md:px-16">
+    <div class="max-w-[1400px] mx-auto flex flex-col items-center">
+        <img src="assets/kuhi-logo-white.png" alt="KUHI Gentle Luxury" class="h-28 md:h-36 w-auto object-contain mb-10 md:mb-14 opacity-50" />
+        <div class="grid grid-cols-2 md:flex flex-wrap justify-center gap-x-8 md:gap-x-12 gap-y-6 md:gap-y-8 mb-16 md:mb-24 w-full">
+            <a class="text-white/40 hover:text-white transition-all duration-500 text-[10px] tracking-[0.2rem] uppercase text-center" href="#">Privacy Policy</a>
+            <a class="text-white/40 hover:text-white transition-all duration-500 text-[10px] tracking-[0.2rem] uppercase text-center" href="#">Shipping &amp; Returns</a>
+            <a class="text-white/40 hover:text-white transition-all duration-500 text-[10px] tracking-[0.2rem] uppercase text-center" href="#">Sustainability</a>
+            <a class="text-white/40 hover:text-white transition-all duration-500 text-[10px] tracking-[0.2rem] uppercase text-center" href="#">Contact</a>
+        </div>
+        <div class="w-full h-px bg-white/5 mb-8 md:mb-12"></div>
+        <div class="flex flex-col md:flex-row justify-between items-center w-full gap-6 md:gap-8">
+            <p class="text-white/20 text-[9px] tracking-[0.25rem] uppercase">
+                &copy; 2025 KUHI ATELIER. ALL RIGHTS RESERVED.
+            </p>
+            <div class="flex space-x-8">
+                <a class="text-white/40 hover:text-white transition-colors text-[10px] tracking-widest uppercase" href="#">Instagram</a>
+                <a class="text-white/40 hover:text-white transition-colors text-[10px] tracking-widest uppercase" href="#">Journal</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

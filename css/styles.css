@@ -1,0 +1,314 @@
+/* ============================================
+   KUHI GENTLE LUXURY — Shared Styles
+   Design System: The Nouveau Loom
+   ============================================ */
+
+/* --- Selection --- */
+::selection {
+    background: #1A1A1A;
+    color: #FCF9F8;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #FCF9F8; }
+::-webkit-scrollbar-thumb { background: #1A1A1A; }
+
+[data-theme="dark"]::-webkit-scrollbar-track { background: #1b1c1c; }
+[data-theme="dark"]::-webkit-scrollbar-thumb { background: #775A19; }
+
+/* --- Smooth Scroll --- */
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Typography --- */
+body {
+    font-family: 'Manrope', sans-serif;
+}
+h1, h2, h3, .font-serif {
+    font-family: 'Newsreader', serif;
+}
+
+/* --- Material Symbols --- */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+    font-size: 22px;
+}
+
+/* --- Clamp Utility --- */
+.text-huge {
+    font-size: clamp(3rem, 10vw, 8rem);
+}
+
+/* --- No Scrollbar Utility --- */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* --- Editorial Grid (Collections) --- */
+.editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 1024px) {
+    .editorial-grid .span-4 { grid-column: span 4; }
+    .editorial-grid .span-5 { grid-column: span 5; }
+    .editorial-grid .span-6 { grid-column: span 6; }
+    .editorial-grid .span-7 { grid-column: span 7; }
+    .editorial-grid .span-8 { grid-column: span 8; }
+    .editorial-grid .span-12 { grid-column: span 12; }
+}
+@media (max-width: 1023px) {
+    .editorial-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+/* ============================================
+   SCROLL PROGRESS BAR
+   ============================================ */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: #775A19;
+    z-index: 9999;
+    width: 0%;
+    transition: none;
+}
+
+/* ============================================
+   REVEAL ANIMATIONS (IntersectionObserver)
+   ============================================ */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+[data-reveal="left"] {
+    transform: translateX(-60px);
+}
+
+[data-reveal="right"] {
+    transform: translateX(60px);
+}
+
+[data-reveal="scale"] {
+    transform: scale(0.92);
+}
+
+[data-reveal].revealed {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+/* --- Stagger delays --- */
+[data-reveal-delay="1"] { transition-delay: 0.1s; }
+[data-reveal-delay="2"] { transition-delay: 0.2s; }
+[data-reveal-delay="3"] { transition-delay: 0.3s; }
+[data-reveal-delay="4"] { transition-delay: 0.4s; }
+[data-reveal-delay="5"] { transition-delay: 0.5s; }
+
+/* ============================================
+   KEYFRAME ANIMATIONS
+   ============================================ */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* --- Hero entrance --- */
+.hero-animate {
+    animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.hero-animate-delay-1 {
+    opacity: 0;
+    animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+.hero-animate-delay-2 {
+    opacity: 0;
+    animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+}
+.hero-animate-delay-3 {
+    opacity: 0;
+    animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+}
+
+/* ============================================
+   VIEW TRANSITIONS API
+   ============================================ */
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-old(root) {
+    animation: 0.3s ease-out both fade-out;
+}
+::view-transition-new(root) {
+    animation: 0.3s ease-in both fade-in;
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ============================================
+   MOBILE MENU OVERLAY
+   ============================================ */
+.mobile-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.mobile-menu.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.mobile-menu a {
+    font-family: 'Newsreader', serif;
+    font-size: 2.5rem;
+    transition: color 0.3s, letter-spacing 0.3s;
+}
+
+/* Light theme mobile menu */
+.mobile-menu.light {
+    background: rgba(252, 249, 248, 0.97);
+}
+.mobile-menu.light a {
+    color: #1A1A1A;
+}
+.mobile-menu.light a:hover {
+    color: #775A19;
+}
+
+/* Dark theme mobile menu */
+.mobile-menu.dark {
+    background: rgba(27, 28, 28, 0.97);
+}
+.mobile-menu.dark a {
+    color: #FCF9F8;
+}
+.mobile-menu.dark a:hover {
+    color: #775A19;
+}
+
+/* ============================================
+   NAV TRANSITIONS
+   ============================================ */
+.nav-compact {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.nav-hidden {
+    transform: translateY(-100%);
+}
+
+/* ============================================
+   PARALLAX
+   ============================================ */
+[data-parallax] {
+    will-change: transform;
+    transition: transform 0.1s linear;
+}
+
+/* ============================================
+   COUNTER ANIMATION
+   ============================================ */
+.counter {
+    font-variant-numeric: tabular-nums;
+}
+
+/* ============================================
+   IMAGE HOVER EFFECTS
+   ============================================ */
+.img-editorial {
+    transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1),
+                filter 0.8s ease;
+}
+.group:hover .img-editorial {
+    transform: scale(1.05);
+}
+.img-desat {
+    filter: grayscale(0.5);
+    transition: filter 0.8s ease;
+}
+.group:hover .img-desat {
+    filter: grayscale(0);
+}
